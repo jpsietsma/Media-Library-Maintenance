@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\MediaLibraryMaintenance.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClasses\MediaFile.cs" />
+    <Compile Include="BaseClasses\SortMediaFile.cs" />
+    <Compile Include="BaseClasses\TelevisionEpisode.cs" />
+    <Compile Include="enums\MediaFileEnums.cs" />
+    <Compile Include="ExceptionClasses\SortExceptions.cs" />
+    <Compile Include="ext\SortExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
